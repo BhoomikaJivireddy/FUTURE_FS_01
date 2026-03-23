@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhoomika | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+ 
+  <nav id="navbar">
+    <a href="#" class="nav-logo">B<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleDrawer()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+ 
+  <!-- Mobile full-screen drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <ul>
+      <li><a href="#about"    onclick="closeDrawer()">About</a></li>
+      <li><a href="#skills"   onclick="closeDrawer()">Skills</a></li>
+      <li><a href="#projects" onclick="closeDrawer()">Projects</a></li>
+      <li><a href="#experience" onclick="closeDrawer()">Experience</a></li>
+      <li><a href="#contact"  onclick="closeDrawer()">Contact</a></li>
+    </ul>
+  </div>
+ 
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">BTech CSE(AI) &middot; 2nd Year &middot; Looking for Internships</div>
+        <h1 class="hero-title">
+          <span class="line">Hi, I'm <span class="accent">Bhoomika</span></span>
+          <span class="line">— a <span class="accent2">Full-stack </span>developer.</span>
+        </h1>
+        <p class="hero-sub">Full-stack learner (AI-focused) passionate about building things with code. 
+          Building intelligent applications that solve real-world problems.</p>
+        <div class="hero-ctas">
+          <a href="#skills" class="btn-primary">Explore My Skills</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring hero-photo-ring-2"></div>
+          <div class="hero-photo-frame">
+            <img src="bhoomika-img.jpeg" alt="Bhoomika" class="hero-photo">
+          </div>
+          <div class="hero-photo-badge">
+            <span class="hero-photo-dot"></span> Open to work
+          </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="hero-scroll-line"></div>Scroll to explore</div>
+  </section>
+ 
+  <section id="about">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title reveal">Who am I?</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm <strong>Bhoomika</strong>, a <span class="highlight">Computer Science student</span> specializing in Artificial Intelligence, currently in my 2nd year of BTech at <span class="highlight">Vignan's Institute of Information Technology</span>, 
+          deeply passionate about building real-world applications that combine full-stack development with AI.</p>
+        <p>
+          Actively looking for internship opportunities, open source collaborations,
+          and learning partnerships. Don't hesitate to reach out — I'd love to connect with fellow developers and mentors.
+        </p>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-card">
+          <div class="about-card-label">// my journey so far</div>
+          <ul class="timeline">
+            <li><span class="tl-year">2024</span><div class="tl-content"><strong>Started BTech CSE</strong>Began learning programming fundamentals with C and Python.</div></li>
+            <li><span class="tl-year">2025</span><div class="tl-content"><strong>Expanded to Java &amp; Web Dev</strong>HTML, CSS, JavaScript — built first static pages. Learned Java OOP concepts.</div></li>
+            <li><span class="tl-year">2025</span><div class="tl-content"><strong>Leveled Up — React &amp; Node.js</strong>Frontend frameworks, backend APIs, networking fundamentals and how APIs are designed.</div></li>
+            <li><span class="tl-year">Now</span><div class="tl-content"><strong>Eyeing the Cloud</strong>Docker, containerization, AWS basics — the next frontier.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="skills">
+    <div class="section-label">Technical Skills</div>
+    <h2 class="section-title reveal">What I Know</h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal reveal-delay-1" style="--cat-color: #b06c30;">
+        <div class="cat-name">Programming Languages</div>
+        <div class="cat-desc">Core languages I've learned and practiced.</div>
+        <div class="skill-pills"><span class="pill">C</span><span class="pill">Python</span><span class="pill">Java</span><span class="pill">SQL</span></div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2" style="--cat-color: #443b8a;">
+        <div class="cat-name">Frontend Development</div>
+        <div class="cat-desc">Building user interfaces and interactive web experiences.</div>
+        <div class="skill-pills"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill learning">React</span></div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3" style="--cat-color: #823750;">
+        <div class="cat-name">Backend Development</div>
+        <div class="cat-desc">Server-side logic, APIs and data handling.</div>
+        <div class="skill-pills"><span class="pill learning">Node.js</span><span class="pill">Python</span></div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2" style="--cat-color: #6b429a;">
+        <div class="cat-name">Tools &amp; Workflow</div>
+        <div class="cat-desc">Day-to-day development environment.</div>
+        <div class="skill-pills"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">Terminal</span></div>
+      </div>
+      <div class="skill-category reveal reveal-delay-5" style="--cat-color: #b5984f;">
+        <div class="cat-name">Cloud &amp; DevOps</div>
+        <div class="cat-desc">Currently exploring — the next step in my journey.</div>
+        <div class="skill-pills"><span class="pill learning">Docker</span><span class="pill learning">AWS</span><span class="pill learning">Containers</span></div>
+      </div>
+    </div>
+    <div class="skills-note reveal">Dashed borders indicate skills currently being learned</div>
+  </section>
+ 
+  <section id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title reveal">What I've Built</h2>
+    <div class="projects-coming reveal">
+      <div class="coming-title">Projects Coming Soon</div>
+      <p class="coming-text">I'm still in the early stages of my BTech journey and actively building my first set of projects. Stay tuned.</p>
+      
+    </div>
+  </section>
+ 
+  <section id="experience">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title reveal">What I've Done</h2>
+    <div class="roadmap">
+      <div class="road-card reveal reveal-delay-4">
+          <div class="road-status in-progress">In Progress</div>
+          <div class="road-title">Full Stack Web Development Internship</div>
+          <div class="road-desc">Full Stack Web Development internship at <span class="highlight">FUTURE INTERNS</span> 
+            - A one month internship program to gain hands-on experience in software development. 
+            <br><strong>Tasks included:</strong></div>
+          
+          <div class="road-tags">
+            <span class="road-tag">Person Professional Portfolio</span>
+            <span class="road-tag">Client Lead Management System(Mini CRM)</span>
+            <span class="road-tag">Local Business Website & Live Pitch Project</span>
+          </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="contact">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title reveal">Let's Connect</h2>
+    <div class="contact-wrap">
+      <div class="reveal">
+        <p class="contact-big">Got an opportunity, a project idea, or just want to say hi?</p>
+        
+        <div class="contact-links">
+          <!-- FIX 1: mailto: prefix added -->
+          <a href="mailto:bhoomikajivireddy@gmail.com" class="contact-link">
+            ✉ bhoomikajivireddy@gmail.com
+          </a>
+          <a href="https://github.com/BhoomikaJivireddy" target="_blank" class="contact-link">
+            ⌥ github.com/BhoomikaJivireddy
+          </a>
+          <a href="https://www.linkedin.com/in/bhoomika-jivireddy-b5101034a/" target="_blank" class="contact-link">
+            ↗ linkedin.com/in/Bhoomika Jivireddy
+          </a>
+        </div>
+      </div>
+ 
+      <!-- FIX 2: Message storage + inbox panel -->
+      <div class="reveal reveal-delay-3">
+        <button class="inbox-toggle" onclick="toggleInbox()" id="inboxBtn">
+          View Messages &nbsp;<span class="inbox-badge" id="inboxCount">0</span>
+        </button>
+        <div class="inbox-panel" id="inboxPanel">
+          <div class="inbox-header">
+            <span>// RECEIVED MESSAGES</span>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <button class="inbox-clear" id="clearBtn" onclick="askClear()">Clear all</button>
+              <div class="inbox-clear-confirm" id="clearConfirm">
+                <span style="font-size:0.65rem;color:var(--muted);">Sure?</span>
+                <button class="inbox-clear-yes" onclick="confirmClear()">Yes</button>
+                <button class="inbox-clear-no"  onclick="cancelClear()">No</button>
+              </div>
+            </div>
+          </div>
+          <div class="inbox-messages" id="inboxMessages">
+            <div class="inbox-empty">No messages yet. Be the first to reach out!</div>
+          </div>
+        </div>
+ 
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-input" id="formName" placeholder="Jane Doe" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" id="formEmail" placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" id="formMsg" placeholder="Hey Bhoomika, I'd love to..."></textarea>
+          </div>
+          <button class="btn-primary" style="align-self:flex-start;border:none;" onclick="handleSend(this)">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer>
+    <div class="footer-logo">Bhoomika<span>.</span>J</div>
+    <div>Designed &amp; built with ♥ — BTech CSE(AI), 2nd Year</div>
+    <div>&copy; 2026 Bhoomika</div>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
