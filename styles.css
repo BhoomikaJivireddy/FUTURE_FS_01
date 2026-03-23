@@ -574,14 +574,23 @@ section { padding: 100px 60px; position: relative; }
 .skills-note { margin-top: 24px; display: flex; align-items: center; gap: 10px; font-size: 0.72rem; color: var(--muted); }
 .skills-note::before { content: '- - -'; color: var(--accent3); letter-spacing: 0.1em; }
 #projects { background: var(--surface); }
-.projects-coming { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 60px; text-align: center; position: relative; overflow: hidden; }
-@keyframes gradShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
-.coming-icon { font-size: 3rem; margin-bottom: 20px; display: block; }
-.coming-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.6rem; margin-bottom: 12px; letter-spacing: -0.02em; }
-.coming-text { color: var(--muted); font-size: 0.88rem; line-height: 1.7; max-width: 400px; margin: 0 auto 32px; }
-.coming-items { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-.coming-item { background: rgba(124,106,255,0.08); border: 1px solid rgba(124,106,255,0.2); border-radius: 8px; padding: 10px 20px; font-size: 0.78rem; color: var(--accent); }
-.coming-item span { color: var(--muted); margin-right: 6px; }
+.pro-photo { width: 100%; height: 350px; border-radius: 12px; border: 1px solid var(--border); transition: border-color 0.3s, transform 0.3s; }
+.pro-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; text-align: center; margin-top: 8PX; margin-bottom: 8px; }
+.pro-desc {
+    display: flex;
+    justify-content: space-around;
+}
+.pro-desc a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: larger;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+.pro-desc a:hover {
+    border-color: var(--accent2);
+}
 .roadmap { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: -20px; }
 .road-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 28px; transition: border-color 0.3s, transform 0.3s; }
 .road-card:hover { border-color: var(--accent); transform: translateY(-4px); }
